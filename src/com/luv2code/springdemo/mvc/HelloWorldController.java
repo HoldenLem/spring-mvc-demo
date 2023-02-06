@@ -9,6 +9,7 @@ import org.springframework.web.multipart.support.AbstractMultipartHttpServletReq
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
     // need to create a controller method to show the initial HTML form
