@@ -21,10 +21,10 @@
     Country:
     <form:select path="country">
 
-    <from:option value="Brazil" label+"Brazil" />
-    <from:option value="Ukraine" label+"Ukraine" />
-    <from:option value="Romania" label+"Romania" />
-    <from:option value="Poland" label+"Poland" />
+    <form:option value="Brazil" label="Brazil" />
+    <form:option value="Ukraine" label="Ukraine" />
+    <form:option value="Romania" label="Romania" />
+    <form:option value="Poland" label="Poland" />
 
     </form:select>
 
