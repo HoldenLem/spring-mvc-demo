@@ -1,38 +1,38 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>Student Registration Form </title>
+	<title>Student Registration Form</title>
 </head>
 
 <body>
 
-  <form:form action="processForm" modelAttribute="student" >
+	<form:form action="processForm" modelAttribute="student">
 
-    First name: <form:input path="firstName" />
+		First name: <form:input path="firstName" />
 
-    <br></br>
+		<br><br>
 
-    Last name <form:input path="lastName" />
+		Last name: <form:input path="lastName" />
 
-    <br></br>
+		<br><br>
 
-    Country:
-    <form:select path="country">
+		Country:
 
-    <form:option value="Brazil" label="Brazil" />
-    <form:option value="Ukraine" label="Ukraine" />
-    <form:option value="Romania" label="Romania" />
-    <form:option value="Poland" label="Poland" />
+		<form:select path="country">
 
-    </form:select>
+			<form:options items="${student.countryOptions}" />
 
-      <br></br>
+		</form:select>
 
-    <input type="submit" value="Submit" />
+		<br><br>
 
-  </form:form>
+		<input type="submit" value="Submit" />
+
+	</form:form>
 
 
 </body>

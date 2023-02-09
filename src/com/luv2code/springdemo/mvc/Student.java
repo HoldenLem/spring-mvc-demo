@@ -8,7 +8,7 @@ public class Student {
 
     private String lastName;
 
-    private LinkedHashMap<String,String> countryOption;
+    private LinkedHashMap<String, String> countryOptions;
     private String country;
 
     public String getCountry() {
@@ -22,11 +22,11 @@ public class Student {
 
     public Student() {
         // populate county options: use ISO country code
-        countryOption  = new LinkedHashMap<>();
-        countryOption.put("BR","Brazil");
-        countryOption.put("UA","Ukraine");
-        countryOption.put("PL","Poland");
-        countryOption.put("RM", "Romania");
+        countryOptions = new LinkedHashMap<>();
+        countryOptions.put("BR", "Brazil");
+        countryOptions.put("UA", "Ukraine");
+        countryOptions.put("PL", "Poland");
+        countryOptions.put("RM", "Romania");
     }
 
     public String getFirstName() {
@@ -45,7 +45,11 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public LinkedHashMap<String, String> getCountryOption() {
-        return countryOption;
+    public LinkedHashMap<String, String> getCountryOptions() {
+        return countryOptions;
+    }
+
+    public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+        this.countryOptions = countryOptions;
     }
 }
