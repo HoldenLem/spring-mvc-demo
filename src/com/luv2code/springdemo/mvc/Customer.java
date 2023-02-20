@@ -12,7 +12,7 @@ public class Customer {
 
     @NotNull(message = "is required")
     @Size(min = 1)
-    private String lustNme;
+    private String lastNme;
 
     public String getFirstName() {
         return firstName;
@@ -23,10 +23,10 @@ public class Customer {
     }
 
     public String getLustNme() {
-        return lustNme;
+        return lastNme;
     }
 
-    public void setLustNme(String lustNme) {
-        this.lustNme = lustNme;
+    public void setLustNme(String lastNme) {
+        this.lastNme = lastNme;
     }
 }
