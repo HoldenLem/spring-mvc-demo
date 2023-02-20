@@ -13,6 +13,16 @@ public class Student {
 
     private String favoriteLanguage;
 
+    private String[] operatingSystem;
+
+    public String[] getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(String[] operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
     public String getFavoriteLanguage() {
         return favoriteLanguage;
     }

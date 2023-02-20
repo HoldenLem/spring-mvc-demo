@@ -40,6 +40,16 @@
 
         <br><br>
 
+        Select your favorite operating system:
+
+        		 <br></br>
+
+                		Linux <form:checkbox path="operatingSystem" value="Linux" />
+                		Windows <form:checkbox path="operatingSystem" value="Windows" />
+                		Mac OS <form:checkbox path="operatingSystem" value="Mac OS" />
+
+                <br><br>
+
 
 		<input type="submit" value="Submit" />
 
