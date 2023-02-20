@@ -17,7 +17,7 @@
 
     Fill out the form:
 
-    <br>/<br>
+    <br><br>
 
     <form:form action="processForm" modelAttribute="customer" >
 
@@ -27,7 +27,7 @@
 
         Last name: <form:input path="lastName" />
 
-        <form:error path="lastName" cssClass="error" />
+        <form:errors path="lastName" cssClass="error" />
 
         <input type="submit" value="Submit" />
 
