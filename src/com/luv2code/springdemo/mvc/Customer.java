@@ -6,12 +6,12 @@ import javax.validation.constraints.Size;
 public class Customer {
 
 
-    @NotNull(message = "is required")
-    @Size(min = 1)
+    @NotNull
+    @Size(min = 1, message = "is required")
     private String firstName;
 
-    @NotNull(message = "is required")
-    @Size(min = 1)
+    @NotNull
+    @Size(min = 1, message = "is required")
     private String lastName;
 
     public String getFirstName() {
