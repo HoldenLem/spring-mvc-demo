@@ -22,7 +22,7 @@ public @interface CourseCode {
     // define default groups
     public Class<?>[] groups() default {};
 
-    // define default playoad
-    public Class<? extends Payload>[] playoad() default {};
+    // define default payload
+    public Class<? extends Payload>[] payload() default {};
 }
 
