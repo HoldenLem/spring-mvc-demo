@@ -4,6 +4,7 @@ import javax.validation.constraints.*;
 
 public class Customer {
 
+    @CourseCode
     private String courseCode;
 
     @NotNull(message = "is required")
@@ -54,5 +55,13 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
