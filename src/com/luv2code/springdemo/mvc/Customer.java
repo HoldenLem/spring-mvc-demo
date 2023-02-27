@@ -4,6 +4,7 @@ import javax.validation.constraints.*;
 
 public class Customer {
 
+    private String courseCode;
 
     @NotNull(message = "is required")
     @Size(min = 1, message = "is required")
